@@ -23,7 +23,9 @@ const [rightPosition, setRightPosition] = useState()
                 video: true
             });
 
+           if(stream){
             videoEle.current.srcObject = stream;
+           }
             
         } catch(err) {
             console.log(err);
@@ -67,6 +69,8 @@ const [rightPosition, setRightPosition] = useState()
 
     const backToCam = () => {
         setimageUrl('')
+        setbottomPosition()
+        setRightPosition()
     }
 
 
@@ -151,7 +155,7 @@ const [rightPosition, setRightPosition] = useState()
                 </button>
 
                 <div className='row border m-2' style={{height:'240px', width:'240px', position:'absolute', bottom:bottomValue, right:rightValue}}>
-       {questions?.map((item,i)=>showRandom(item,i))}
+      
           
             </div>
             </div>
@@ -175,7 +179,7 @@ const [rightPosition, setRightPosition] = useState()
                     </a>
                 </div>
 
-                <div className='row border m-2' style={{height:'240px', width:'240px', position:'absolute', bottom:bottomPosition, right:rightPosition}}>
+                <div className='row border m-2' style={{height:'240px', width:'240px', position:'absolute', bottom:bottomPosition, right:rightPosition, backgroundColor:'rgba(255,255,255,0.3)'}}>
        {questions?.map((item,i)=>showRandom(item,i))}
           
             </div>
