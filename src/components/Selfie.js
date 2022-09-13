@@ -151,7 +151,7 @@ const Selfie = () => {
           style={{ height: "80px", width: "80px" }}
         >
           <i
-            className="fa circle fa-circle fa-lg text-white"
+            className="fa circle fa-circle fa-lg text-danger"
             aria-hidden="true"
           ></i>
         </div>
@@ -167,7 +167,7 @@ const Selfie = () => {
           style={{ height: "80px", width: "80px" }}
         >
           <i
-            className="fa triangle fa-caret-up fa-3x text-white"
+            className="fa triangle fa-caret-up fa-3x text-danger"
             aria-hidden="true"
           ></i>
         </div>
@@ -183,7 +183,7 @@ const Selfie = () => {
           style={{ height: "80px", width: "80px" }}
         >
           <i
-            className="fa square fa-square fa-lg text-white"
+            className="fa square fa-square fa-lg text-danger"
             aria-hidden="true"
           ></i>
         </div>
@@ -250,7 +250,7 @@ const Selfie = () => {
 
   return (
     <div style={{background:'#03285D', height:'100vh', width:'100vw'}} className="d-flex justify-content-center align-items-center">
-        <div style={{background:'#ffffff', height:'85vh', width:'85vw'}} className="p-5 d-flex flex-column justify-content-center align-items-center">
+        <div style={{background:'#F5F2D0', height:'85vh', width:'85vw'}} className="p-5 d-flex flex-column justify-content-center align-items-center">
             <h5>{!imageUrl ? 'Take Selfie' : `Select ${validateObject}s`}</h5>
             {imageUrl === "" && (
           <div className="cam">
