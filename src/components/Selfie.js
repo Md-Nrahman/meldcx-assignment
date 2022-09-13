@@ -17,9 +17,9 @@ const Selfie = () => {
       : 0
   );
   const [bottomValue, setbottomValue] = useState(
-    Math.floor(Math.random() * 10)
+    Math.floor(Math.random() * 6)
   );
-  const [rightValue, setRightValue] = useState(Math.floor(Math.random() * 10));
+  const [rightValue, setRightValue] = useState(Math.floor(Math.random() * 6));
   const [bottomPosition, setbottomPosition] = useState();
   const [rightPosition, setRightPosition] = useState();
   const videoEle = createRef();
@@ -145,7 +145,7 @@ const Selfie = () => {
         <div
           key={i}
           onClick={(e) => letsPlay(e, i, "circle")}
-          className={`col-sm-4 circle border ${
+          className={`col-4 circle border ${
             validationAnswers[i] == "circle" && "bg-info"
           }`}
           style={{ height: "80px", width: "80px" }}
@@ -161,7 +161,7 @@ const Selfie = () => {
         <div
           key={i}
           onClick={(e) => letsPlay(e, i, "triangle")}
-          className={`col-sm-4 triangle border ${
+          className={`col-4 triangle border ${
             validationAnswers[i] == "triangle" && "bg-info"
           }`}
           style={{ height: "80px", width: "80px" }}
@@ -177,7 +177,7 @@ const Selfie = () => {
         <div
           key={i}
           onClick={(e) => letsPlay(e, i, "square")}
-          className={`col-sm-4 square border ${
+          className={`col-4 square border ${
             validationAnswers[i] == "square" && "bg-info"
           }`}
           style={{ height: "80px", width: "80px" }}
@@ -193,7 +193,7 @@ const Selfie = () => {
         <div
           key={i}
           onClick={(e) => letsPlay(e, i, "empty")}
-          className={`col-sm-4 empty border ${
+          className={`col-4 empty border ${
             validationAnswers[i] == "empty" && "bg-info"
           }`}
           style={{ height: "80px", width: "80px" }}
