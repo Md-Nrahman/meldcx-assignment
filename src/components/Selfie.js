@@ -17,9 +17,9 @@ const Selfie = () => {
       : 0
   );
   const [bottomValue, setbottomValue] = useState(
-    Math.floor(Math.random() * 6)
+    Math.floor(Math.random() * 4)
   );
-  const [rightValue, setRightValue] = useState(Math.floor(Math.random() * 6));
+  const [rightValue, setRightValue] = useState(Math.floor(Math.random() * 4));
   const [bottomPosition, setbottomPosition] = useState();
   const [rightPosition, setRightPosition] = useState();
   const videoEle = createRef();
@@ -148,7 +148,7 @@ const Selfie = () => {
           className={`col-4 circle border ${
             validationAnswers[i] == "circle" && "bg-info"
           }`}
-          style={{ height: "80px", width: "80px" }}
+          style={{ height: "60px", width: "60px" }}
         >
           <i
             className="fa circle fa-circle fa-lg text-danger"
@@ -164,7 +164,7 @@ const Selfie = () => {
           className={`col-4 triangle border ${
             validationAnswers[i] == "triangle" && "bg-info"
           }`}
-          style={{ height: "80px", width: "80px" }}
+          style={{ height: "60px", width: "60px" }}
         >
           <i
             className="fa triangle fa-caret-up fa-3x text-danger"
@@ -180,7 +180,7 @@ const Selfie = () => {
           className={`col-4 square border ${
             validationAnswers[i] == "square" && "bg-info"
           }`}
-          style={{ height: "80px", width: "80px" }}
+          style={{ height: "60px", width: "60px" }}
         >
           <i
             className="fa square fa-square fa-lg text-danger"
@@ -196,7 +196,7 @@ const Selfie = () => {
           className={`col-4 empty border ${
             validationAnswers[i] == "empty" && "bg-info"
           }`}
-          style={{ height: "80px", width: "80px" }}
+          style={{ height: "60px", width: "60px" }}
         ></div>
       );
     }
@@ -266,8 +266,8 @@ const Selfie = () => {
             <div
               className="row border m-2"
               style={{
-                height: "240px",
-                width: "240px",
+                height: "180px",
+                width: "180px",
                 position: "absolute",
                 bottom: bottomValue,
                 right: rightValue,
@@ -300,8 +300,8 @@ const Selfie = () => {
               <div
                 className="row border m-2"
                 style={{
-                  height: "240px",
-                  width: "240px",
+                  height: "180px",
+                  width: "180px",
                   position: "absolute",
                   bottom: bottomPosition,
                   right: rightPosition,

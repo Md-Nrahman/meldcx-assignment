@@ -12,7 +12,7 @@ const ErrorScreen = ({count,time, message}) => {
 </div>
 )}
 {message &&(
-<div style={{width:'100vw', height:'100vh'}} className="bg-danger d-flex align-items-center">
+<div style={{width:'100vw', height:'100vh'}} className="bg-danger d-flex align-items-center justify-content-center">
     <div style={{verticalAlign: 'middle', fontFamily:'Roboto', fontSize:'60px'}} className=" text-center text-white animate__animated animate__bounceInLeft">{message}</div>
 
 </div>
