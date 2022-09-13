@@ -280,9 +280,9 @@ const Selfie = () => {
 
 
 {imageUrl !== "" && (
-          <div style={{ position: "relative" }}>
-            <div className="preview">
-              <img className="preview-img" src={imageUrl} ref={imageEle} />
+          <div style={{ position: "relative", }}>
+            <div className="cam " >
+              <img className="video-player" src={imageUrl} ref={imageEle} style={{width:'95%'}}/>
 
               <div className="btn-container">
                 <button className="btn back-btn" onClick={backToCam}>
